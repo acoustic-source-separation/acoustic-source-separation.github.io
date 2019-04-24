@@ -6,6 +6,19 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<head>
+  <style type="text/css">
+    
+    audio {
+    filter: sepia(20%) saturate(70%) grayscale(1) contrast(100%) invert(100%);
+    width: 100%;
+    height: 100%;
+}
+  </style>
+
+</head>
+
 <body id="myPage">
 
 <!-- Sidebar on click -->
@@ -28,7 +41,7 @@
   <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Work</a>
   <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
   <!--<a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Price</a>-->
-  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+  <!-- <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a> -->
     <!--<div class="w3-dropdown-hover w3-hide-small">
     <button class="w3-button" title="Notifications">Dropdown <i class="fa fa-caret-down"></i></button>     
     <div class="w3-dropdown-content w3-card-4 w3-bar-block">
@@ -49,10 +62,16 @@
   </div>
 </div>
 
+
+<div  style="background-color:#000000; overflow: auto" class="w3-row-padding w3-padding-32" id="work">
+<h1 align="center" style="color:white; font-size: 50px; padding-right:20px">ACOUSTIC SOURCE SEPARATION AND</br> SPEECH ENHANCEMENT</h1>
+</div> 
+
 <!-- Image Header -->
 <div class="w3-display-container w3-animate-opacity">
-  <img src="./audio.jpg" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
+  <img src="./audio.jpg" alt="boat" style="width:100%;height:250px;">
 </div>
+
 
 <!-- Modal -->
 <div id="id01" class="w3-modal">
@@ -73,52 +92,84 @@
 </div>
 
 <!-- Work Row -->
-<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work" style="background-color:lightblue">
-<h2>Our Work</h2>
+<div  style="background-color:#EEEEEE; overflow: auto" class="w3-row-padding w3-padding-32" id="work">
+<h2 align="center">Our Work</h2>
 <p>We used deep learning to implement a solution of the Acoustic Source Separation Problem.
 The solution is based on the deep clustering model introduced by <a href="https://arxiv.org/abs/1508.04306" target="_blank"><i>John Et al</i></a>. The model uses BLSTM layers to learn embeddings from the input mixed spectrogram in such a way that embeddings of the same speaker are close to each other while those of different speakers are far apart. Model performs quite well as compared to other methods of source separation as can be seen by the samples provided.</p>
 </div>
 
-<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work" style="background-color:lightblue">
-<h2 align="center"> Accoustic Source Separation Samples</h2>
-<div class="w3-card w3-white">
+<!-- <div class="w3-row-padding w3-padding-64" id="work" style="background-color:lightblue;"> -->
+<!-- <h2 align="center"> Accoustic Source Separation Samples</h2> -->
+<!-- <div class="w3-card w3-white"> -->
   <!--<img src="/w3images/snow.jpg" alt="Snow" style="width:100%">-->
-  <div class="w3-container">
-  <h3>Acoustic Source Separation Sample 1</h3>
+ <!--  <div class="w3-container">
+  <h3>Sample 1</h3>
   <h4>Mixed</h4>
   <audio controls>
     <source src="./bssc1.wav" type="audio/wav">
   Your browser does not support the audio element.
   </audio>
-  </div>
-  </div>
-</div>  
+    <audio controls>
+    <source src="./bssc1.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+    <audio controls>
+    <source src="./bssc1.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+  </div> -->
+  <!-- </div> --> 
+<!-- </div>   -->
   
-<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work"> 
-<div class="w3-quarter">
-<h2>Our Work</h2>
-<p>We used deep learning to implement a solution of the Acoustic Source Separation Problem.
-The solution is based on the deep clustering model introduced by <a href="https://arxiv.org/abs/1508.04306" target="_blank"><i>John Et al</i></a>. The model uses BLSTM layers to learn embeddings from the input mixed spectrogram in such a way that embeddings of the same speaker are close to each other while those of different speakers are far apart. Model performs quite well as compared to other methods of source separation as can be seen by the samples provided.</p>
-</div>
-
+<div class="w3-row-padding w3-padding-32 w3-theme-l2" id="work"> 
+<h2 align="center"> Accoustic Source Separation Samples</h2>
 <div class="w3-quarter">
 <div class="w3-card w3-white">
   <!--<img src="/w3images/snow.jpg" alt="Snow" style="width:100%">-->
   <div class="w3-container">
-  <h3>Acoustic Source Separation Sample 1</h3>
+  <!-- <h3>Acoustic Source Separation Sample 1</h3> -->
   <h4>Mixed</h4>
   <audio controls>
-    <source src="./bssc1.wav" type="audio/wav">
+    <source src="./ASS/Open_Set/3/mix.wav" type="audio/wav">
   Your browser does not support the audio element.
   </audio>
   <h4>Separated #1</h4>
   <audio controls>
-    <source src="SEN_bssc1_1.wav" type="audio/wav">
+    <source src="./ASS/Open_Set/3/out_1.wav" type="audio/wav">
   Your browser does not support the audio element.
   </audio>
   <h4>Separated #2</h4>
   <audio controls>
-    <source src="SEN_bssc1_2.wav" type="audio/wav">
+    <source src="./ASS/Open_Set/3/out_2.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio> 
+  <!--<h4>Trade</h4>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>-->
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <!--<img src="/w3images/snow.jpg" alt="Snow" style="width:100%">-->
+  <div class="w3-container">
+  <!-- <h3>Acoustic Source Separation Sample 1</h3> -->
+  <h4>Mixed</h4>
+  <audio controls>
+    <source src="./ASS/Open_Set/11/mix.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+  <h4>Separated #1</h4>
+  <audio controls>
+    <source src="./ASS/Open_Set/11/out_1.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+  <h4>Separated #2</h4>
+  <audio controls>
+    <source src="./ASS/Open_Set/11/out_2.wav" type="audio/wav">
   Your browser does not support the audio element.
   </audio> 
   <!--<h4>Trade</h4>
@@ -134,20 +185,20 @@ The solution is based on the deep clustering model introduced by <a href="https:
 <div class="w3-card w3-white">
   <!--<img src="/w3images/lights.jpg" alt="Lights" style="width:100%">-->
   <div class="w3-container">
-  <h3>Acoustic Source Separation Sample 2</h3>
+  <!-- <h3>Acoustic Source Separation Sample 2</h3> -->
   <h4>Mixed</h4>
   <audio controls>
-    <source src="cafe.wav" type="audio/wav">
+    <source src="./ASS/Open_Set/23/mix.wav" type="audio/wav">
   Your browser does not support the audio element.
   </audio>
   <h4>Separated #1</h4>
   <audio controls>
-    <source src="SEN_cafe_1.wav" type="audio/wav">
+    <source src="./ASS/Open_Set/23/out_1.wav" type="audio/wav">
   Your browser does not support the audio element.
   </audio>
   <h4>Separated #2</h4>
   <audio controls>
-    <source src="SEN_cafe_2.wav" type="audio/wav">
+    <source src="./ASS/Open_Set/23/out_2.wav" type="audio/wav">
   Your browser does not support the audio element.
   </audio>
   <!--<h4>Trade</h4>
@@ -163,20 +214,20 @@ The solution is based on the deep clustering model introduced by <a href="https:
 <div class="w3-card w3-white">
   <!--<img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">-->
   <div class="w3-container">
-  <h3>Speech Enhancement Sample</h3>
+  <!-- <h3>Speech Enhancement Sample</h3> -->
   <h4>Mixed</h4>
   <audio controls>
-    <source src="mix.wav" type="audio/wav">
+    <source src="./ASS/Open_Set/24/mix.wav" type="audio/wav">
   Your browser does not support the audio element.
   </audio>
   <h4>Separated #1</h4>
   <audio controls>
-    <source src="Mix_out_SEN_1_3500.wav" type="audio/wav">
+    <source src="./ASS/Open_Set/24/out_1.wav" type="audio/wav">
   Your browser does not support the audio element.
   </audio>
   <h4>Separated #2</h4>
   <audio controls>
-    <source src="Mix_out_SEN_2_3500.wav" type="audio/wav">
+    <source src="./ASS/Open_Set/24/out_2.wav" type="audio/wav">
   Your browser does not support the audio element.
   </audio>
   <!--<h4>Trade</h4>
@@ -190,35 +241,286 @@ The solution is based on the deep clustering model introduced by <a href="https:
 
 </div>
 
+
+
+<div class="w3-row-padding w3-padding-32 w3-theme-l2" id="work"> 
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <!--<img src="/w3images/snow.jpg" alt="Snow" style="width:100%">-->
+  <div class="w3-container">
+  <!-- <h3>Acoustic Source Separation Sample 1</h3> -->
+  <h4>Mixed</h4>
+  <audio controls>
+    <source src="./ASS/Open_Set/13/mix.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+  <h4>Separated #1</h4>
+  <audio controls>
+    <source src="./ASS/Open_Set/13/out_1.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+  <h4>Separated #2</h4>
+  <audio controls>
+    <source src="./ASS/Open_Set/13/out_2.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio> 
+  <!--<h4>Trade</h4>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>-->
+  </div>
+  </div>
+</div>
+
+
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <!--<img src="/w3images/lights.jpg" alt="Lights" style="width:100%">-->
+  <div class="w3-container">
+  <!-- <h3>Acoustic Source Separation Sample 2</h3> -->
+  <h4>Mixed</h4>
+  <audio controls>
+    <source src="./ASS/Urdu/mix.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+  <h4>Separated #1</h4>
+  <audio controls>
+    <source src="./ASS/Urdu/SEN_1.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+  <h4>Separated #2</h4>
+  <audio controls>
+    <source src="./ASS/Urdu/SEN_2.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+  <!--<h4>Trade</h4>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>-->
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <!--<img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">-->
+  <div class="w3-container">
+  <!-- <h3>Speech Enhancement Sample</h3> -->
+  <h4>Mixed</h4>
+  <audio controls>
+    <source src="./ASS/single_speaker/2/oracle_1.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+  <h4>Separated #1</h4>
+  <audio controls>
+    <source src="./ASS/single_speaker/2/out_1.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+  <h4>Separated #2</h4>
+  <audio controls>
+    <source src="./ASS/single_speaker/2/out_2.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+  <!--<h4>Trade</h4>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>-->
+  </div>
+  </div>
+</div>
+
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <!--<img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">-->
+  <div class="w3-container">
+  <!-- <h3>Speech Enhancement Sample</h3> -->
+  <h4>Mixed</h4>
+  <audio controls>
+    <source src="./ASS/single_speaker/9/oracle_1.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+  <h4>Separated #1</h4>
+  <audio controls>
+    <source src="./ASS/single_speaker/9/out_1.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+  <h4>Separated #2</h4>
+  <audio controls>
+    <source src="./ASS/single_speaker/9/out_2.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+  <!--<h4>Trade</h4>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>-->
+  </div>
+  </div>
+</div>
+
+
+</div>
+
+<div class="w3-row-padding w3-padding-32 w3-theme-l1" id="work"> 
+<h2 align="center"> Speech Enhancement Samples</h2>
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <!--<img src="/w3images/snow.jpg" alt="Snow" style="width:100%">-->
+  <div class="w3-container">
+  <!-- <h3>Acoustic Source Separation Sample 1</h3> -->
+  <h4>Mixed</h4>
+  <audio controls>
+    <source src="./SE/p232_005/mix.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+  <h4>Speech</h4>
+  <audio controls>
+    <source src="./SE/p232_005/speech.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+  <h4>Noise</h4>
+  <audio controls>
+    <source src="./SE/p232_005/noise.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio> 
+  <!--<h4>Trade</h4>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>-->
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <!--<img src="/w3images/snow.jpg" alt="Snow" style="width:100%">-->
+  <div class="w3-container">
+  <!-- <h3>Acoustic Source Separation Sample 1</h3> -->
+  <h4>Mixed</h4>
+  <audio controls>
+    <source src="./SE/p232_007/mix.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+  <h4>Speech</h4>
+  <audio controls>
+    <source src="./SE/p232_007/speech.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+  <h4>Noise</h4>
+  <audio controls>
+    <source src="./SE/p232_007/noise.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio> 
+  <!--<h4>Trade</h4>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>-->
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <!--<img src="/w3images/snow.jpg" alt="Snow" style="width:100%">-->
+  <div class="w3-container">
+  <!-- <h3>Acoustic Source Separation Sample 1</h3> -->
+  <h4>Mixed</h4>
+  <audio controls>
+    <source src="./SE/p232_143/mix.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+  <h4>Speech</h4>
+  <audio controls>
+    <source src="./SE/p232_143/speech.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+  <h4>Noise</h4>
+  <audio controls>
+    <source src="./SE/p232_143/noise.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio> 
+  <!--<h4>Trade</h4>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>-->
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <!--<img src="/w3images/snow.jpg" alt="Snow" style="width:100%">-->
+  <div class="w3-container">
+  <!-- <h3>Acoustic Source Separation Sample 1</h3> -->
+  <h4>Mixed</h4>
+  <audio controls>
+    <source src="./SE/p232_156/mix.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+  <h4>Speech</h4>
+  <audio controls>
+    <source src="./SE/p232_156/speech.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+  <h4>Noise</h4>
+  <audio controls>
+    <source src="./SE/p232_156/noise.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio> 
+  <!--<h4>Trade</h4>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>-->
+  </div>
+  </div>
+</div>
+
+</div>
+
+
+
+
 <!-- Team Container -->
 <div class="w3-container w3-padding-64 w3-center" id="team">
 <h2>OUR TEAM</h2>
-<p>Meet the team:</p>
 
 <div class="w3-row"><br>
 
 <div class="w3-quarter">
   <img src="./usman.png" alt="Team Member" style="width:45%" class="w3-circle w3-hover-opacity">
   <h3>Usman Anwar</h3>
-  <p>Project Lead</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  usmananwar391@gmail.com</p>
+  <!-- <p>Project Lead</p> -->
 </div>
 
 <div class="w3-quarter">
   <img src="./Osama.JPG" alt="Team Member" style="width:45%" class="w3-circle w3-hover-opacity">
   <h3>Osama Rashid</h3>
-  <p>Development</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  osamarashid1997@gmail.com</p>
+  <!-- <p>Development</p> -->
 </div>
 
 <div class="w3-quarter">
   <img src="./ismaeel.jpeg" alt="Team Member" style="width:45%" class="w3-circle w3-hover-opacity">
   <h3>Muhammad Ismael</h3>
-  <p>GUI Design</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  m.ismaeelkanju@gmail.com</p>
+  <!-- <p>GUI Design</p> -->
 </div>
 
 <div class="w3-quarter">
   <img src="./mohsin.jpeg" alt="Team Member" style="width:45%" class="w3-circle w3-hover-opacity">
   <h3>Mohsin Ali Tanveer</h3>
-  <p>Data Acquisition</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  mohsinalitanvit@hotmail.com</p>
+  <!-- <p>Data Acquisition</p> -->
 </div>
 
 </div>
@@ -295,17 +597,17 @@ The solution is based on the deep clustering model introduced by <a href="https:
 
 
 <!-- Contact Container -->
-<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+<!-- <div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
   <div class="w3-row">
     <div class="w3-col m5">
     <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
-      <!--<h3>Address</h3>
+      <h3>Address</h3>
       <p>Swing by for a cup of coffee, or whatever.</p>-->
-      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Lahore, Pakistan</p>
-      <!--<p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +00 1515151515</p>-->
-      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  usmananwar391@gmail.com</p>
+   <!--    <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Lahore, Pakistan</p>
+      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +00 1515151515</p>-->
+      <!-- <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  usmananwar391@gmail.com</p>
       <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  osamarashid1997@gmail.com</p>
-    </div>
+    </div>  -->--> -->
     <!--<div class="w3-col m7">
       <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
       <div class="w3-section">      
@@ -329,7 +631,7 @@ The solution is based on the deep clustering model introduced by <a href="https:
 </div>
 
 <!-- Image of location/map -->
-<img src="./mic.jpeg" class="w3-image w3-greyscale-min" style="width:100%;">
+<!-- <img src="./mic.jpeg" class="w3-image w3-greyscale-min" style="width:100%;"> -->
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
